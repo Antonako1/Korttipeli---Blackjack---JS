@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="korttipelit.js" defer></script>
+    <title>korttipeli</title>
+    <style>
+        img{
+            max-width: 100px;
+            max-height: 300px;
+        }
+        #left{
+            display: flex;
+            
+        }
+        #right{
+            display: flex;
+        }#tulos{font-size: larger;}
+
+    </style>
+</head>
+<body> 
+    <button type="button" onclick="korttipeli.restart()"><p>Aloita uusi peli</p></button>
+    <br><br><br>
+    <button type="button" onclick="korttipeli.uusiKortti()"><p>Hit</p></button>
+    <button type="button" onclick="korttipeli.lopeta()"><p>Stand</p></button>
+    <br>
+    <p id="tulos"></p>
+    <p>Pelaaja</p>
+    <p id="pelaajanKasi"></p>
+    <div id="left">
+        <p id="kuva1"></p>
+        <p id="kuva2"></p>
+        <p id="kuva3"></p>
+    </div>
+    <br>
+    <p>Tietokone</p>
+    <p id="talonKasi"></p>
+    <div id="right">
+        <p id="taloKuva1"></p>
+        <p id="taloKuva2"></p>
+    </div>
+</body>
+</html>
